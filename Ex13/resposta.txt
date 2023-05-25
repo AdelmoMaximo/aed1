@@ -1,0 +1,7 @@
+Existe uma diferença entre escrever v[3] e v + 3 porque eles representam conceitos diferentes em relação ao acesso e manipulação de elementos do vetor.
+
+v[3]: Essa expressão acessa o valor do quarto elemento do vetor v. O uso dos colchetes [3] indica que queremos acessar o elemento específico do vetor, contando a partir de 0. A notação v[3] retorna o valor armazenado no quarto elemento do vetor.
+
+v + 3: Essa expressão representa o endereço de memória do terceiro elemento após o endereço de v. Aqui, v é tratado como um ponteiro para o primeiro elemento do vetor. Ao adicionar um número inteiro a um ponteiro, o resultado é um novo ponteiro que aponta para uma posição de memória relativa a esse número de elementos à frente.
+
+Portanto, a diferença essencial é que v[3] retorna o valor do quarto elemento do vetor, enquanto v + 3 retorna o endereço de memória do terceiro elemento após o endereço de v.

@@ -1,0 +1,7 @@
+x: O valor final de x será 3. Inicialmente, x é atribuído o valor de *p, que é 0. Em seguida, x é atribuído o valor 4, decrementado em 1 para se tornar 3.
+
+y: O valor final de y será 3. Primeiro, p é apontado para o endereço de memória de y. Em seguida, (*p)++ incrementa o valor de y em 1, tornando-o 1. Em seguida, (*p) += x adiciona o valor de x (3) ao valor de y, resultando em 4.
+
+p: O valor final de p será o endereço de memória de y. No código fornecido, p é atribuído o endereço de memória de y através de p = &y. Portanto, o valor final de p será o mesmo endereço de memória de y.
+
+Assim, ao final do trecho de código, x terá o valor 3, y terá o valor 4 e p continuará apontando para o endereço de y
