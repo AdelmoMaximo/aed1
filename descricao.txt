@@ -1,0 +1,78 @@
+1. Merge Sort
+Funcionamento:
+Merge Sort é um algoritmo de divisão e conquista que divide repetidamente o array ao meio, ordena cada metade e, em seguida, mescla as duas metades ordenadas.
+
+Complexidade Big O:
+
+
+Essa uniformidade de desempenho, independente da ordem inicial dos dados, faz do Merge Sort uma escolha robusta para muitas situações, apesar de sua necessidade de espaço adicional para a mescla.
+
+2. Quick Sort
+Funcionamento:
+Quick Sort também é um algoritmo de divisão e conquista, mas trabalha de maneira um pouco diferente. Ele escolhe um "pivot" e particiona o array em dois subarrays: um com elementos menores que o pivot e outro com elementos maiores, e depois ordena os subarrays de forma recursiva.
+
+Complexidade Big O:
+
+
+A eficiência do Quick Sort em média o torna uma das escolhas mais rápidas para ordenação na prática, embora seu desempenho dependa fortemente da escolha dos pivots.
+
+3. Heap Sort
+Funcionamento:
+Heap Sort transforma o array em uma heap binária (uma árvore completa onde cada nó pai é menor ou maior que seus nós filhos), extrai o maior elemento da heap e o coloca na posição correta no array. Este processo é repetido para o restante do array.
+
+Complexidade Big O:
+
+Heap Sort tem a vantagem de não precisar de espaço extra significativo (diferentemente do Merge Sort), e sua performance é bastante previsível, mas geralmente é um pouco mais lento que o Quick Sort bem implementado em casos médios.
+
+Conclusão
+Esses três algoritmos mostram diferentes abordagens para o problema de ordenação, cada um com seus prós e contras em termos de desempenho e uso de memória. A escolha entre eles pode depender do contexto específico, como as características dos dados de entrada ou os requisitos de espaço.
+
+
+1. Merge Sort
+Funcionamento Detalhado:
+Merge Sort é um algoritmo de ordenação que utiliza a técnica de divisão e conquista. Seu processo pode ser dividido em duas fases principais: divisão e conquista (mesclagem).
+
+Divisão:
+Inicia com o array inteiro.
+Divide o array pela metade repetidamente até que cada subconjunto contenha apenas um elemento. Cada subconjunto de um elemento é considerado ordenado por definição.
+Conquista (Mesclagem):
+Começa a combinar os subconjuntos de um elemento em subconjuntos maiores, garantindo que cada combinação resultante esteja ordenada.
+Durante a mesclagem, os elementos dos subconjuntos são comparados e combinados de forma ordenada em um novo subconjunto.
+Esse processo continua até que o array inteiro seja reagrupado e ordenado.
+Visualização:
+Imagine um array [3, 1, 4, 1, 5, 9, 2, 6]. O Merge Sort o dividiria até que cada peça seja um elemento, e então começaria a mesclar cada par de elementos em sequência, comparando e construindo arrays maiores e ordenados passo a passo.
+
+2. Quick Sort
+Funcionamento Detalhado:
+Quick Sort é outro algoritmo de divisão e conquista que ordena itens selecionando um elemento como pivot e particionando os demais elementos em dois subarrays, de acordo com se são maiores ou menores que o pivot.
+
+Escolha do Pivot:
+O pivot pode ser escolhido de várias maneiras (primeiro elemento, último elemento, mediano, etc.).
+Particionamento:
+Reorganiza o array de forma que todos os elementos menores que o pivot venham antes dele, e todos os elementos maiores venham depois dele. Após o particionamento, o pivot estará em sua posição final.
+Recursão:
+Aplica-se o mesmo processo de maneira recursiva aos subarrays formados pelos elementos à esquerda e à direita do pivot (excluindo o próprio pivot).
+Visualização:
+Usando o mesmo array de exemplo [3, 1, 4, 1, 5, 9, 2, 6], se escolhermos o primeiro elemento (3) como pivot, após o primeiro particionamento, podemos ter algo como [1, 1, 2, 3, 5, 9, 4, 6] e o pivot (3) já estará em sua posição correta.
+
+3. Heap Sort
+Funcionamento Detalhado:
+Heap Sort transforma o array em uma heap (geralmente uma heap máxima), e então extrai o maior elemento (raiz da heap) para colocá-lo na posição correta no array, repetindo esse processo até que o array esteja ordenado.
+
+Criação da Heap:
+O array é reorganizado em uma estrutura de heap máxima, onde o maior elemento é a raiz.
+Extração dos Elementos:
+O elemento raiz (o maior) é removido da heap e movido para a sua posição final no array.
+A heap é reconstruída para que o próximo maior elemento se mova para a raiz.
+Reconstrução da Heap:
+Cada vez que um elemento é removido, a estrutura de heap é ajustada para manter as propriedades da heap máxima.
+Visualização:
+Para o array [3, 1, 4, 1, 5, 9, 2, 6], a construção inicial da heap máxima resultaria em algo como [9, 6, 4, 1, 5, 3, 2, 1]. Depois, 9 seria colocado no fim do array, e o processo seria repetido para os elementos restantes.
+
+Essas explicações fornecem uma visão detalhada de como cada algoritmo manipula o array para alcançar a ordenação, com suas respectivas estratégias e operações.
+
+
+
+
+
+
