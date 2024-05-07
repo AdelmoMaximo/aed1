@@ -72,6 +72,53 @@ Para o array [3, 1, 4, 1, 5, 9, 2, 6], a construção inicial da heap máxima re
 Essas explicações fornecem uma visão detalhada de como cada algoritmo manipula o array para alcançar a ordenação, com suas respectivas estratégias e operações.
 
 
+Insertion Sort
+Funcionamento Detalhado:
+Insertion Sort simula a maneira como você poderia ordenar cartas de baralho em suas mãos. Ele é frequentemente preferido para quantidades pequenas de dados ou para adicionar poucos elementos a uma lista já ordenada.
+
+Início:
+Começa com o segundo elemento do array, pois um único elemento é considerado ordenado.
+Seleção do Elemento:
+O elemento atual é armazenado em uma variável temporária (chamada key).
+Inserção:
+Compara este elemento com os anteriores; se os elementos anteriores forem maiores do que o elemento atual, eles são movidos uma posição para frente para fazer espaço.
+Colocação do Elemento:
+O elemento atual é então inserido na posição correta.
+Repetição:
+O processo é repetido para cada elemento até que o array inteiro esteja ordenado.
+Visualização:
+Para um array [3, 1, 4, 5, 9, 2, 6], o Insertion Sort começa com 1 e o compara com 3 para colocá-lo na frente. Em seguida, 4 já está em posição, 5 também, e assim por diante. Quando chega a 2, ele é comparado e inserido antes de 3.
+
+2. Selection Sort
+Funcionamento Detalhado:
+Selection Sort é um algoritmo intuitivo que funciona selecionando repetidamente o menor elemento da parte não ordenada do array e o movendo para a frente.
+
+Seleção:
+Em cada iteração, você seleciona o menor elemento da parte não ordenada do array.
+Troca:
+O elemento selecionado é então trocado com o primeiro elemento da parte não ordenada.
+Avanço:
+A fronteira entre a parte ordenada e não ordenada do array avança um elemento para frente.
+Repetição:
+Esse processo se repete até que toda a array esteja ordenada.
+Visualização:
+Para o mesmo array [3, 1, 4, 5, 9, 2, 6], o Selection Sort encontraria 1 como o menor e trocaria com 3, e então continuaria a encontrar o próximo menor em [3, 4, 5, 9, 2, 6].
+
+3. Bubble Sort
+Funcionamento Detalhado:
+Bubble Sort é um dos algoritmos mais simples, mas geralmente o menos eficiente. Ele funciona "bolhando" repetidamente o maior elemento da lista para a sua posição correta, através de sucessivas trocas de elementos adjacentes.
+
+Comparação e Troca:
+Compara elementos adjacentes e os troca se estiverem na ordem errada.
+Passagem Completa:
+Uma passagem completa pelo array coloca o maior elemento não ordenado em sua posição final.
+Repetição:
+Repete o processo para os elementos restantes, cada vez com um elemento a menos a considerar.
+Otimização:
+Pode ser otimizado detectando uma passagem sem trocas, o que indica que o array já está ordenado.
+Visualização:
+Para o array [3, 1, 4, 5, 9, 2, 6], Bubble Sort começaria trocando 3 e 1, depois 4 e 1, e assim por diante até 9 e 2, colocando o 9 na posição correta. Depois repetiria, desta vez colocando 6 em sua posição correta, e assim sucessivamente.
+
 
 
 
